@@ -1,18 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/linear_layout_container_label_app_activity_main"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_mulai_kuis_activity_main"
+        android:layout_centerHorizontal="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/ic_quizio"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:text="Aplikasi kuis sederhana" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_mulai_kuis_activity_main"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_16dp"
+        android:layout_marginBottom="@dimen/margin_32dp"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_text_nama_activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan nama kamu ya ;D"
+                android:inputType="textPersonName"
+                tools:ignore="Autofill" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/button_mulai_kuis_activity_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="78dp"
+        android:background="@drawable/bg_button_rounded_accent"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingStart="@dimen/margin_72dp"
+        android:paddingLeft="@dimen/margin_72dp"
+        android:paddingTop="@dimen/margin_12dp"
+        android:paddingEnd="@dimen/margin_72dp"
+        android:paddingRight="@dimen/margin_72dp"
+        android:paddingBottom="@dimen/margin_12dp"
+        android:text="Mulai Kuis"
+        android:textColor="@android:color/white" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
