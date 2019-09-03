@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".score.ScoreActivity"></activity>
+        <activity android:name=".question3.Question3Activity" />
+        <activity android:name=".question2.Question2Activity" />
+        <activity android:name=".question1.Question1Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

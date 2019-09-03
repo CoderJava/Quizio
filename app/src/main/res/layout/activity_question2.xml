@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    android:orientation="vertical"
+    tools:context=".question2.Question2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_16dp">
+
+        <douglasspgyn.com.github.circularcountdown.CircularCountdown
+            android:id="@+id/circular_count_down_activity_question2"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            app:countdownBackgroundColor="@android:color/white"
+            app:countdownForegroundColor="@color/colorAccent"
+            app:countdownTextColor="@android:color/white"
+            app:countdownTextSize="24sp" />
+
+        <TextView
+            android:id="@+id/text_view_label_pertanyaan_activity_question2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_12dp"
+            android:text="Pertanyaan 2/3"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/text_view_pertanyaan_activity_question2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ini pertanyaannya"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/margin_16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_view_jawaban_1_activity_question2"
+                android:text="Jawaban 1"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:background="@drawable/bg_text_view_answer"
+                android:padding="@dimen/margin_12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_view_jawaban_2_activity_question2"
+                android:layout_marginTop="@dimen/margin_12dp"
+                android:text="Jawaban 2"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:background="@drawable/bg_text_view_answer"
+                android:padding="@dimen/margin_12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_view_jawaban_3_activity_question2"
+                android:layout_marginTop="@dimen/margin_12dp"
+                android:text="Jawaban 3"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:background="@drawable/bg_text_view_answer"
+                android:padding="@dimen/margin_12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_view_jawaban_4_activity_question2"
+                android:layout_marginTop="@dimen/margin_12dp"
+                android:text="Jawaban 4"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:background="@drawable/bg_text_view_answer"
+                android:padding="@dimen/margin_12dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
